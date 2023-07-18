@@ -1,0 +1,38 @@
+.score{
+  border: solid white;
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+h4
+{
+  padding: 0%;
+  margin: 0%;
+
+}
+.result h1{
+  font-size: 4rem;
+}
+.result p{
+  font-size: 2rem;
+  letter-spacing: .1rem;
+}
+@media screen and (max-width:688px) {
+ .score{
+  width: 100% !important;
+
+ }
+h1{
+  font-size: 2rem !important;
+}
+p{
+  font-size: 1rem !important;
+  margin: auto !important;
+}
+.result{
+  padding: .5rem !important;
+  width: auto !important;
+}
+}

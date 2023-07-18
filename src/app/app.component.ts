@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'rock-game';
+
+  rules:boolean=false;
+  openRules(){
+    this.rules=true;
+  }
+  closeRules(){
+    this.rules=false;
+  }
 }

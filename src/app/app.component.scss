@@ -1,0 +1,45 @@
+.rules{
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+}
+.rule-container{
+  background-color: rgba(0, 0, 0, 0.411);
+}
+.rule-sheet{
+  position: absolute;
+  top: 25%;
+  left: 40%;
+  z-index: 99;
+  background-color: rgb(240, 248, 255);
+  border-radius: 1rem;
+  -webkit-border-radius: 1rem;
+  -moz-border-radius: 1rem;
+  -ms-border-radius: 1rem;
+  -o-border-radius: 1rem;
+}
+.test{
+  position: relative;
+}
+
+.close-sheet img{
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+}
+@media screen and (max-width:688px) {
+    .rule-sheet{
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+}
+.close-sheet{
+  width: auto;
+  height: auto;
+}
+
+
+
+}

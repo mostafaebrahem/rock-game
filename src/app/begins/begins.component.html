@@ -1,0 +1,21 @@
+<div class="all w-50 d-flex justify-content-around align-items-center h-50 m-auto">
+  <div class="left">
+    <h1>YOU PICKED</h1>
+    <div class="spock mt-4">
+      <img [src]="items[currentItem.x]" alt="">
+    </div>
+  </div>
+  <div class="center" >
+    <h1 *ngIf="isWin=='lose'">YOU LOSE</h1>
+    <h1 *ngIf="isWin=='win'">YOU WIN</h1>
+    <h1 *ngIf="isWin=='draw'">YOU Draw</h1>
+    <button class="d-block mb-4" routerLink="/game">PLAY AGAIN</button>
+    <button class="bg-danger" (click)="newGame()">NEW GAME</button>
+  </div>
+  <div class="right"  >
+    <h1>ME PICKED</h1>
+    <div class="spock mt-4"  >
+      <img [src]="items[random]" alt="" >
+    </div>
+  </div>
+</div>
