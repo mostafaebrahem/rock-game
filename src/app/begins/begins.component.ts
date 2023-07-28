@@ -13,13 +13,15 @@ export class BeginsComponent implements OnInit {
   random:number=0;
   isWin!:"win"|"draw"|"lose";
   meChoise:boolean=true;
+  colors:string[];
   constructor(private route: ActivatedRoute,private _DataService:DataService) {
-
+    this.colors=this._DataService.colors;
     this.route.params.subscribe((params) => {
       // display the extracted data in the console
       this.currentItem=params;
       console.log(this.currentItem.x);
     });
+    
     this.random=_DataService.randomValue;
     this.winnerCalc();
    }

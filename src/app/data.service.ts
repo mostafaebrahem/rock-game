@@ -14,6 +14,13 @@ export class DataService {
     "../../assets/images/icon-lizard.svg",
     "../../assets/images/icon-rock.svg",
   ])
+  colors:string[]=[
+    "bg-scissors",
+    "bg-spock",
+    "bg-paper",
+    "bg-lizard",
+    "bg-rock"
+  ]
   constructor() {
     if("score" in localStorage){
       this.score=Number(localStorage.getItem("score"))
@@ -26,6 +33,6 @@ export class DataService {
   }
   genetateRandom(){
     this.randomValue= Math.round(Math.random()*4)
-   
+
   }
 }

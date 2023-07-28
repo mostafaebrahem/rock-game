@@ -9,9 +9,13 @@ import { DataService } from '../data.service';
 export class GameComponent implements OnInit {
   gameData:string[]=[];
   // random!:number;
-  constructor(private _Data:DataService) { }
+  colors:string[]=[]
+  constructor(private _Data:DataService) {
+
+   }
 
   ngOnInit(): void {
+    this.colors=this._Data.colors
     this._Data.getGameData().subscribe((data)=>{
       this.gameData=data;
       console.log(this.gameData)

@@ -1,21 +1,21 @@
 
 <div  class="main w-25 m-auto vh-50 mt-5">
-  <div class="scissors"  (click)="genetateRandom()" [routerLink]="'/begins/'+0">
+  <div [class]="colors[0]" class="scissors"  (click)="genetateRandom()" [routerLink]="'/begins/'+0">
     <img [src]="gameData[0]" alt="">
   </div>
-  <div class="paper-sec">
-    <div class="spock" (click)="genetateRandom()" [routerLink]="'/begins/'+1">
+  <div  class="paper-sec">
+    <div [class]="colors[1]" class="spock" (click)="genetateRandom()" [routerLink]="'/begins/'+1">
       <img [src]="gameData[1]" alt="">
     </div>
-    <div class="paper" (click)="genetateRandom()" [routerLink]="'/begins/'+2">
+    <div [class]="colors[2]" class="paper" (click)="genetateRandom()" [routerLink]="'/begins/'+2">
       <img [src]="gameData[2]" alt="">
     </div>
   </div>
-  <div class="rock-sec" (click)="genetateRandom()" [routerLink]="'/begins/'+3">
-    <div class="lizard">
+  <div  class="rock-sec" (click)="genetateRandom()" [routerLink]="'/begins/'+3">
+    <div [class]="colors[3]" class="lizard">
       <img [src]="gameData[3]" alt="">
     </div>
-    <div class="rock" (click)="genetateRandom()" [routerLink]="'/begins/'+4">
+    <div [class]="colors[4]" class="rock" (click)="genetateRandom()" [routerLink]="'/begins/'+4">
       <img [src]="gameData[4]" alt="">
     </div>
   </div>
